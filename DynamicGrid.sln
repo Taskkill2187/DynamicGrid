@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 14 for Windows Desktop
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicGrid", "DynamicGrid\DynamicGrid\DynamicGrid.csproj", "{2216BBCD-A6AE-4454-9401-350987F52093}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "DynamicGridContent", "DynamicGrid\DynamicGridContent\DynamicGridContent.contentproj", "{7A9A1224-D337-4AF2-BC90-F0233C98C340}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2216BBCD-A6AE-4454-9401-350987F52093}.Debug|x86.ActiveCfg = Debug|x86
+		{2216BBCD-A6AE-4454-9401-350987F52093}.Debug|x86.Build.0 = Debug|x86
+		{2216BBCD-A6AE-4454-9401-350987F52093}.Release|x86.ActiveCfg = Release|x86
+		{2216BBCD-A6AE-4454-9401-350987F52093}.Release|x86.Build.0 = Release|x86
+		{7A9A1224-D337-4AF2-BC90-F0233C98C340}.Debug|x86.ActiveCfg = Debug|x86
+		{7A9A1224-D337-4AF2-BC90-F0233C98C340}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
