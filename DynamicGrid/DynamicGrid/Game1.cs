@@ -20,7 +20,7 @@ namespace DynamicGrid
         SpriteBatch spriteBatch;
 
         DynamicGrid Grid;
-        int GridSpacing = 10;
+        int GridSpacing = 6;
         float MouseStrength = 1.3f;
 
         public Game1()
@@ -29,7 +29,9 @@ namespace DynamicGrid
             Content.RootDirectory = "Content";
             graphics.PreferredBackBufferWidth = (int)Values.WindowSize.X;
             graphics.PreferredBackBufferHeight = (int)Values.WindowSize.Y;
-            Grid = new DynamicGrid(new Rectangle(100, 100, (int)Values.WindowSize.X - 200, (int)Values.WindowSize.Y - 200), GridSpacing);
+            Grid = new DynamicGrid(new Rectangle(50, 50, (int)Values.WindowSize.X - 100, (int)Values.WindowSize.Y - 100), GridSpacing);
+            IsFixedTimeStep = true;
+            TargetElapsedTime = TimeSpan.FromSeconds(1 / 60.0f);
             IsMouseVisible = true;
         }
 

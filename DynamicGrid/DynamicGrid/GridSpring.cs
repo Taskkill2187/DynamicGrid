@@ -48,5 +48,23 @@ namespace DynamicGrid
             }
             //SB.DrawString(Assets.Font, ((int)(End1.Pos - End2.Pos).Length()).ToString(), (End1.Pos + End2.Pos) / 2, Color.Blue);
         }
+        public void DrawColored(SpriteBatch SB)
+        {
+            lock (End1)
+            {
+                lock (End2)
+                {
+                    float Length = (End1.Pos - End2.Pos).Length();
+                    if (Length > 0)
+                    {
+                        if ((Length - Length0) < (Length0 / 2))
+                            Assets.DrawLine(End1.Pos, End2.Pos, 1, Color.Lerp(Color.Green, Color.Yellow, (Length - Length0) / (Length0 / 2)), SB);
+                        else
+                            Assets.DrawLine(End1.Pos, End2.Pos, 1, Color.Lerp(Color.Yellow, Color.Red, (Length - Length0 * 1.5f) / (Length0)), SB);
+                    }
+                }
+            }
+            //SB.DrawString(Assets.Font, ((int)(End1.Pos - End2.Pos).Length()).ToString(), (End1.Pos + End2.Pos) / 2, Color.Blue);
+        }
     }
 }

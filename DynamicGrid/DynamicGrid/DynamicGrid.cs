@@ -133,7 +133,7 @@ namespace DynamicGrid
                 {
                     if (i < HorzSprings.Count)
                     {
-                        HorzSprings[i].Draw(SB);
+                        HorzSprings[i].DrawColored(SB);
                     }
                 }
             }
@@ -143,7 +143,7 @@ namespace DynamicGrid
                 {
                     if (i < VertSprings.Count)
                     {
-                        VertSprings[i].Draw(SB);
+                        VertSprings[i].DrawColored(SB);
                     }
                 }
             }

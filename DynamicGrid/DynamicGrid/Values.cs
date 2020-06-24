@@ -14,6 +14,6 @@ namespace DynamicGrid
     public static class Values
     {
         public static Random RDM = new Random();
-        public static Vector2 WindowSize = new Vector2(1360, 768);
+        public static Vector2 WindowSize = new Vector2(1360, 748);
     }
 }
